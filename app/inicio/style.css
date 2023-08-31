@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    background-image: url('../../img/52a2c01e7427101a9aba4ce0cd7e20f9.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    top: 69%;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h4 {
+    position: absolute;
+    bottom: 4%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}

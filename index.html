@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comme:wght@200&family=Noto+Sans:wght@100;400&family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="img/tesla-logo-8.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
+        <script src="https://kit.fontawesome.com/442ac4d6eb.js" crossorigin="anonymous"></script>
+        <script>
+            const elementos = document.querySelectorAll('.elemento');
+            const animarElemento = (entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                entry.target.style.opacity = '1'; /* Altera a opacidade para 1 */
+                entry.target.style.transform = 'translateY(0)'; /* Move o elemento para sua posição original */
+                observer.unobserve(entry.target); /* Para de observar o elemento após a animação ser aplicada */
+                }
+            });
+            };
+
+            const observer = new IntersectionObserver(animarElemento, { threshold: 0.5 });
+
+            elementos.forEach(elemento => {
+            observer.observe(elemento); /* Observa cada elemento */
+            });
+        </script>
+        <title>Tesla Delivery</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="intro-website">
+                <p>
+                    Crédito fiscal de até US$ 7.500 disponível para o Modelo Y e o Modelo 3. Saiba mais
+                </p>
+            </div>
+            <header class="header">
+                <div class="img-logo">
+                    <img src="img/tesla-logo.png" alt="Tesla" class="image">
+                </div>
+
+                <nav class="navigation">
+                    <ul class="navbar">
+                        <li class="nav-item"><a href="#" class="nav-link">Modelo 5</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Modelo 3</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Modelo X</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Modelo Y</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Teto Solar</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Painel Solar</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Powerwall</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="navigation-account">
+                    <ul class="navbar">
+                        <li class="nav-item"><a href="#" class="nav-link">Loja</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Conta</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section class="tesla">
+                
+            </section>
+
+            <section class="maps">
+                <div class="text-section">
+                    <h3>Novo serviço de Delivery</h3>
+                    <p>
+                        A Tesla sente orgulho em apresentar o novo modelo C, uma moto automatizada que visa entregar sua mercadoria de forma mais rápida, segura e tecnológica.
+                    </p>
+                </div>
+                <a href="#" class="buttonn">Veja mais</a>
+            </section>
+
+            <section class="moto">
+                <div class="text-section">
+                    <h3>Sua Entrega com mais segurança e rapidez</h3>
+                    <p>
+                        Nossas motos visam entregar ao cliente a melhor experiência possível, principalmente em questão de segurança, desevolvemos o novo aplicativo Tesla Motors, onde será possível localizar sua encomenda em tempo real, acompanhar o trajeto e obter códigos de segurança para desbloquear o baú da moto assim que for entregue em seu endereço.
+                    </p>
+                </div>
+                <a href="#" class="buttonn">Veja mais</a>
+            </section>
+
+            <section class="design">
+                <div class="text-section">
+                    <h3>Design</h3>
+
+                    <p>
+                        A segurança é a parte mais importante de cada Tesla. Projetamos nossos veículos para <span>exceder os padrões de segurança</span>.
+                    </p>
+                </div>
+
+                <div class="btns">
+                    <a href="#" id="btn-order">Serviços</a>
+                    <a href="#" id="btn-more">Peças</a>
+                </div>
+            </section>
+
+            <main>
+                <div class="seta1">
+                    <i class="fa-solid fa-arrow-right fa-rotate-180 fa-2xl" style="color: #c2c2c2;"></i>
+                </div>
+
+                <div class="cards">
+                    <div class="card">
+                        <img src="img/download.jfif">
+                        <h4>Modelo C</h4>
+                        <p>
+                            Tesla volta a investir na área automotiva, dessa vez nossa novidade é o modelo C, uma moto automatizada, 100% controlada por piloto automático e usuária de todas as tecnologias disponíveis nos produtos Tesla.
+                        </p>
+                    </div>
+    
+                    <div class="card">
+                        <img src="img/qr.png">
+                        <h4>QR Code</h4>
+                        <p>
+                            Após a aprovação do pagamento, é disponibilizado um QR Code, que deve ser scaneado pelo veículo para desbloqueio de uma das fases de segurança, antes do preenchimento do código para liberação da mercadoria.
+                        </p>
+                    </div>
+    
+                    <div class="card">
+                        <img src="img/luiz-cent-ZA6KIwNAJ-A-unsplash (1).jpg">
+                        <h4>Disponibilidade</h4>
+                        <p>
+                            Tesla disponibiliza esse serviço para todo o território nacional americano, nossas motos deliverys são conectadas ao nosso sistema de internet Starlink, que distribui internet para todo o planeta.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="seta2">
+                    <i class="fa-solid fa-arrow-right fa-2xl" style="color: #c2c2c2;"></i>
+                </div>
+            </main>
+
+            <section class="tesla">
+
+            </section>
+
+            <footer class="footer">
+                <nav class="navigation">
+                    <ul class="navbar">
+                        <li class="nav-item"><a href="#" class="nav-link">Tesla &copy; 2023</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Privacy & Legal</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Vehicle Recalls</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">News</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Get Updates</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Locations</a></li>
+                    </ul>
+                </nav>
+            </footer>
+        </div>
+
+        
+    </body>
+</html>
